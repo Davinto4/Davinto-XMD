@@ -47,33 +47,3 @@ npm start
 
 > On first run, scan the QR code or use the pair code to connect your WhatsApp account.
 
-
-
-
----
-
-Folder Structure
-
-Davinto-XMD/
-├─ index.js
-├─ db.js
-├─ database.json
-├─ utils.js
-├─ events.js
-├─ package.json
-├─ auth_info.json (auto-generated)
-├─ LICENSE
-├─ README.md
-├─ plugins/
-│   ├─ user.js
-│   ├─ fun.js
-│   ├─ tools.js
-│   └─ ai.js
-└─ temp/
-
-
----
-
-License
-
-MIT License © 2025 Davinto

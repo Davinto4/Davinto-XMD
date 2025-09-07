@@ -32,6 +32,21 @@ Davinto-XMD is a WhatsApp bot that lets you automate group management, play fun 
 ```bash
 git clone https://github.com/<your-username>/Davinto-XMD.git
 cd Davinto-XMD
+### 🎭 Fun & Entertainment
+`.truth`, `.dare`, `.wyr`, `.gif`, `.emojify`, `.roast`, `.love`, `.fact`, `.fortune`, `.quiz`, `.rate`, `.nick`  
+
+### 🛠 Utility Tools
+`.calc`, `.dict`, `.unit`, `.qrcode`, `.barcode`, `.toimg`, `.topdf`, `.encrypt`, `.decrypt`, `.shorten`, `.expand`, `.phone`, `.whois`, `.ip`, `.fakeid`, `.timer`  
+
+---
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/<your-username>/Davinto-XMD.git
+cd Davinto-XMD
 
 2. Install dependencies:
 

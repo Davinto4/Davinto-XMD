@@ -1,4 +1,6 @@
 node_modules/
-data/
+auth_info.json
+temp/
 *.log
+.DS_Store
 .env

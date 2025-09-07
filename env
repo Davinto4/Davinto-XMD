@@ -1,0 +1,13 @@
+# ==== Davinto XMD Environment Config ====
+
+# Your WhatsApp number (owner/admin)
+ADMIN_PHONE=2348169945105
+
+# Session folder (already set in config.js)
+SESSION_PATH=./data/session
+
+# Port (if hosting with Heroku/Render/VPS)
+PORT=3000
+
+# Gemini API Key (for .ai command)
+GEMINI_API_KEY=AIzaSyCAs2wxLD5ZQRDxO9M3_o4IHk3M4h-wLJE

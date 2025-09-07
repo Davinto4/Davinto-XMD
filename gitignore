@@ -1,0 +1,22 @@
+# Node.js dependencies
+node_modules/
+
+# WhatsApp auth info
+auth_info.json
+
+# Temporary files
+temp/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables (if you add .env in future)
+.env
+
+# Optional editor files
+.vscode/
+.idea/

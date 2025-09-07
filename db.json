@@ -1,0 +1,62 @@
+const fs = require("fs");
+const path = require("path");
+
+const dbPath = path.join(__dirname, "database.json");
+
+// Load DB
+function loadDB() {
+  if (!fs.existsSync(dbPath)) {
+    fs.writeFileSync(dbPath, JSON.stringify({ users: {}, groups: {} }, null, 2));
+  }
+  return JSON.parse(fs.readFileSync(dbPath));
+}
+
+// Save DB
+function saveDB(data) {
+  fs.writeFileSync(dbPath, JSON.stringify(data, null, 2));
+}
+
+// Get user data
+function getUser(id) {
+  let db = loadDB();
+  if (!db.users[id]) {
+    db.users[id] = { afk: null, notes: [], todos: [], rank: 0, level: 1 };
+    saveDB(db);
+  }
+  return db.users[id];
+}
+
+// Update user data
+function updateUser(id, newData) {
+  let db = loadDB();
+  db.users[id] = { ...getUser(id), ...newData };
+  saveDB(db);
+  return db.users[id];
+}
+
+// Get group data
+function getGroup(id) {
+  let db = loadDB();
+  if (!db.groups[id]) {
+    db.groups[id] = { welcome: true, goodbye: true, antilink: false, rules: "" };
+    saveDB(db);
+  }
+  return db.groups[id];
+}
+
+// Update group data
+function updateGroup(id, newData) {
+  let db = loadDB();
+  db.groups[id] = { ...getGroup(id), ...newData };
+  saveDB(db);
+  return db.groups[id];
+}
+
+module.exports = {
+  loadDB,
+  saveDB,
+  getUser,
+  updateUser,
+  getGroup,
+  updateGroup
+};

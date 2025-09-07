@@ -1,0 +1,30 @@
+{
+  "name": "davinto-xmd",
+  "version": "1.0.0",
+  "description": "Davinto XMD - Multi-feature WhatsApp Bot with AI, fun, tools, and group management",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "WhatsApp",
+    "Bot",
+    "AI",
+    "Davinto",
+    "XMD",
+    "Baileys"
+  ],
+  "author": "Davinto",
+  "license": "MIT",
+  "dependencies": {
+    "@adiwajshing/baileys": "^5.0.0",
+    "node-fetch": "^2.6.7",
+    "qrcode": "^1.5.1",
+    "moment": "^2.29.4",
+    "fs-extra": "^11.1.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
